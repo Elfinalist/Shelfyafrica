@@ -515,6 +515,99 @@
 
 
 
+  <!-- 
+    - #Faq
+  -->
+
+<faq class="faq">
+  <div class="wrapper">
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+      <button class="accordion">
+        What is Shelfy?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Shelfy is a mobile app that helps you save and organize screenshots of items or 
+          things that catch your interest. It creates a personalized shopping experience by 
+          recommending similar products based on your saved screenshots.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        How does Shelfy work?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Simply take a screenshot of any item you like, and Shelfy will automatically detect
+          it and add it to your personalized shelf. From there, you can browse similar recommendations 
+          and shop directly through the app.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Who can use Shelfy?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Shelfy is for anyone who loves to shop and wants to keep track of the products or trends they see online.
+          Whether you're a casual shopper or an avid deal-hunter, Shelfy helps you stay organized and discover new 
+          items with ease.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        What types of items can I save with Shelfy?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          You can save almost anything you see online—from clothing, gadgets, and beauty products to furniture and travel 
+          inspiration. If it catches your eye, Shelfy can track it for you!
+
+
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Do I need an account to use Shelfy?
+
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Yes, creating an account allows you to sync your saved items across devices and access personalized recommendations 
+          based on your preferences.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        How can I contact Shelfy for support?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          You can reach our support team via the help section within the app or by emailing us at info@shelfy.africa
+        </p>
+      </div>
+    </div>
+  </div>
+</faq>
 
 
   <!-- 
@@ -692,6 +785,30 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- 
+    - faq
+  -->
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
 
 </body>
 
